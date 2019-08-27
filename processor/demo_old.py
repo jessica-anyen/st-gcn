@@ -18,7 +18,8 @@ class Demo(IO):
     """
     def start(self):
 
-        openpose = '{}/examples/openpose/openpose.bin'.format(self.arg.openpose)
+        #openpose = '{}/examples/openpose/openpose.bin'.format(self.arg.openpose)
+        openpose = '{}/OpenPoseDemo.exe'.format(self.arg.openpose)
         video_name = self.arg.video.split('/')[-1].split('.')[0]
         output_snippets_dir = './data/openpose_estimation/snippets/{}'.format(video_name)
         output_sequence_dir = './data/openpose_estimation/data'
@@ -113,6 +114,7 @@ class Demo(IO):
         parser.add_argument('--openpose',
             default='3dparty/openpose/build',
             help='Path to openpose')
+       
         parser.add_argument('--output_dir',
             default='./data/demo_result',
             help='Path to save results')
