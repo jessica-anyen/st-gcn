@@ -111,10 +111,12 @@ class Demo(IO):
         parser.add_argument('--video',
             default='./resource/media/skateboarding.mp4',
             help='Path to video')
+        #parser.add_argument('--openpose',
+        #    default='3dparty/openpose/build',
+        #    help='Path to openpose')
         parser.add_argument('--openpose',
-            default='3dparty/openpose/build',
+            default='C:/Users/MMN-AI/Documents/GitHub/openpose/build1/x64/Release',
             help='Path to openpose')
-       
         parser.add_argument('--output_dir',
             default='./data/demo_result',
             help='Path to save results')
